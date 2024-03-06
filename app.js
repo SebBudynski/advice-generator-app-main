@@ -2,6 +2,7 @@
 
 const dice = document.querySelector("button");
 
+// Fetching and displaying advice from the API
 function fetchAdvice() {
   fetch(`https://api.adviceslip.com/advice`)
     .then((response) => response.json())
@@ -12,6 +13,7 @@ function fetchAdvice() {
       document.querySelector(".advice").innerHTML = `"${data.slip.advice}"`;
     });
 }
+
 dice.addEventListener("click", fetchAdvice);
 
 fetchAdvice();

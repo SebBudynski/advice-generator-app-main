@@ -52,6 +52,10 @@ main {
   margin-bottom: 2rem;
 }
 
+.divider img {
+  width: 100%;
+}
+
 button {
   border-style: none;
   cursor: pointer;
@@ -68,8 +72,8 @@ button {
   transform: translate(-50%, 50%);
 }
 
-button :hover {
-  box-shadow: 0 0 10px 15px var(--neon-green);
+button:hover {
+  box-shadow: 0 0 30px 0px var(--neon-green);
 }
 
 button img {
@@ -79,9 +83,16 @@ button img {
 
 .attribution {
   font-size: 11px;
+  margin-top: 1rem;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 678px) {
+  .content {
+    margin: 1rem;
+  }
 }
